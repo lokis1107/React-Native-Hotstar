@@ -13,7 +13,9 @@ import Continue from "../screens/Continue";
 const AppNavigation = () => {
   const Stack = createNativeStackNavigator();
   const { user } = useAuth();
-
+  
+// # The if condition is use for the user will be signIn allow the home screen other it will be execute the else part
+  
   if (user) {
     return (
       <Stack.Navigator initialRouteName="Home">
